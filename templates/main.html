@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
+    <!-- <link rel="stylesheet" href="main_style.css"> -->
+</head>
+<body>
+    
+    <div class="wrapper">
+        <form action="">
+            <div class="text1">
+                <h1>Погода</h1>
+            </div>
+            
+            <div class="text2">
+                <h1>Введите название города:</h1>
+            </div>
+
+            <div class="input-box">
+                <form action="cityName" method="get"></form>
+                    <input type="text" id="cityName" name="city_name" placeholder="Город">
+                </form>
+                <input type="submit" value="Поиск">
+            </div>                
+        </form>
+    </div>
+</body>
+</html>

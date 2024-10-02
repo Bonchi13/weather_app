@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" type="png" href="wea/templates/sunny.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/weather_style.css') }}">
+    <!-- <link rel="stylesheet" href="weather_style.css"> -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="cityname">
+            {{result['country']}},
+            {{result['region']}},
+            {{result['city_name']}}<br>
+        </div>
+        <div class="time">
+            Сейчас {{result['local_time'][11:]}}.<br>
+        </div>
+        <div class="temp">
+            +{{result['temperature_c']}}°
+        </div>
+        <div class="condition">
+            {{result['condition']}}
+        </div>
+        <div class="feelslike">
+            Ощущается как +{{result['feelslike_c']}}°.
+        </div>
+        <div class="wind">
+            Скорость ветра: {{result['wind_ms']}} м/с
+        </div>
+        <div class="humidity">
+            {{result['humidity']}}% влажности.
+        </div>
+        <div class="pressure">
+            Давление: {{result['pressure_mm']}} мм рт.ст.
+        </div>
+        <div class="back">
+            <a href="http://127.0.0.1:5000/">Вернуться назад</a>
+        </div>
+    </div>
+    
+</body>
+</html>

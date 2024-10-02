@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    background: url('bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 100%;
+    height: 550px;
+    background-color: #46b490;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .0);
+    color: #ffffff;
+    padding: 20px 100px;
+
+}
+
+.wrapper .cityname {
+    font-size: 60px;
+    text-align: left;
+}
+
+.wrapper .back {
+    color: rgb(62, 134, 192);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
